@@ -1,5 +1,7 @@
 streamlit
 selenium
-webdriver_manager
+webdriver-manager
 pyairtable
 nltk
+psutil
+python-dotenv
