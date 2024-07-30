@@ -14,14 +14,17 @@ from nltk.probability import FreqDist
 import heapq
 from airtable_operations import fetch_all_records, fetch_record_by_id
 from naver_posting import start_posting, pause_posting, resume_posting, stop_posting
-import queue 
+import queue
 import os
-
-#변경 테스트 
+from dotenv import load_dotenv
 
 # NLTK 데이터 다운로드
 nltk.download('punkt')
 nltk.download('stopwords')
+
+# 환경 변수 로드
+load_dotenv()
+
 
 def get_api_key(key_name):
     return st.secrets.get(key_name) or os.environ.get(key_name)
