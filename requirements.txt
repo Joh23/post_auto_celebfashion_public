@@ -1,49 +1,14 @@
-Streamlit Cloud에서 Python 버전 설정 방법 (runtime 파일 사용)
-GitHub 프로젝트에 .streamlit 폴더 생성:
-
-Streamlit 앱이 배포되는 GitHub 프로젝트의 루트 디렉토리에 .streamlit이라는 폴더를 만듭니다.
-runtime.txt 파일 생성:
-
-.streamlit 폴더에 runtime.txt라는 파일을 생성하고, 다음 내용을 추가하세요:
-코드 복사
-3.9
-이 파일은 Streamlit Cloud에 Python 3.9 버전을 사용하도록 지정합니다.
-GitHub에 푸시:
-
-변경된 내용을 GitHub에 커밋하고 푸시합니다:
-bash
-코드 복사
-git add .streamlit/runtime.txt
-git commit -m "Set Python version to 3.9"
-git push origin main
-Streamlit Cloud에서 앱 재배포:
-
-Streamlit Cloud에서 앱이 자동으로 재배포되며, Python 3.9 버전을 사용하게 됩니다.
-streamlit
-pillow
-gspread
-google-auth
-requests
+streamlit==1.29.0
+Pillow==10.1.0
+gspread==5.12.0
+google-auth==2.23.4
+requests==2.31.0
 pyairtable==2.2.1
 pydantic<2.0
-python-dotenv
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlibstreamlit
-selenium
-webdriver-manager
-pyairtable
-nltk
-psutil
-python-dotenv
-streamlit
-pillow
-gspread
-google-auth
-requests
-pyairtable==2.2.1
-pydantic<2.0
-python-dotenv
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
+python-dotenv==1.0.0
+google-api-python-client==2.108.0
+google-auth-httplib2==0.1.1
+google-auth-oauthlib==1.1.0
+selenium==4.15.2
+webdriver-manager==4.0.1
+nltk==3.8.1
