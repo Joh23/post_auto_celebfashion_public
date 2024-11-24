@@ -1,0 +1,7 @@
+streamlit
+selenium
+webdriver-manager
+pyairtable
+nltk
+psutil
+python-dotenv
